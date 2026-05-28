@@ -18,8 +18,8 @@ else:
 
 # Текст сообщения
 if word == "день":
-    message = f"📅 Прошёл {days} {word} без чурки"
+    message = f"Прошёл {days} {word} без чурки"
 else:
-    message = f"📅 Прошло {days} {word} без чурки"
+    message = f"Прошло {days} {word} без чурки"
 
 requests.post(WEBHOOK_URL, json={"content": message})
