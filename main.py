@@ -23,4 +23,3 @@ else:
     message = f"📅 Прошло {days} {word} без чурки"
 
 requests.post(WEBHOOK_URL, json={"content": message})
-```
